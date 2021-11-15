@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 50px 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     background-color: #fff;
     color: #444;
   }
@@ -18,6 +18,7 @@ body {
     color: black;
     padding: 20px;
     font-size: 150%;
+    z-index: 0;
   }
 
   .a {
@@ -35,6 +36,8 @@ body {
     width: calc(100% - 2px);
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 2;
   }
   .b {
     grid-column: 3;
@@ -54,10 +57,12 @@ body {
   .triangle {
     width: 0;
     height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid darkslategray;
-    transform: rotate(-45deg);
+    margin-left: -44px;
+    margin-top: -50px;
+    border-left: 62px solid transparent;
+    border-right: 260px solid transparent;
+    border-bottom: 127px solid darkslategray;
+    transform: rotate(-26deg);
     position: absolute;
     z-index: 1;
   }
